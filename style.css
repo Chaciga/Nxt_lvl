@@ -88,6 +88,46 @@ p,span {
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
+.heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.animate-bar {
+    width: 5rem;
+    height: 4px;
+    background-color: var(--main-color);
+    margin-top: 15px;
+    position: relative;
+}
+.animate-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%
+    }
+}
+.sub-heading {
+    max-width: 40rem;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 1rem;
+}
+
 /* ==================== Navigation Bar ====================== */
 #navbar {
     height: 7rem;
@@ -237,12 +277,11 @@ p,span {
 }
 #about .container .about-img {
     width: 26rem;
-    border: 10px solid #232323;
-    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
-    bottom: -2px;
 }
 #about .container .about-img img {
     width: 100%;
+    border: 10px solid #232323;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
 }
 #about .text-wrapper {
     width: 35rem;
@@ -258,5 +297,192 @@ p,span {
     color: var(--main-color);
 }
 #about .text-wrapper p {
-    margin: 20px;
+    margin: 20px 0;
+}
+#about .about-list {
+    margin: 10px 0;
+}
+#about .about-list .list-item {
+    display: inline-flex;
+    width: 16rem;
+    margin-bottom: 1rem;
+}
+#about .about-list .list-item label{
+    font-size: 15px;
+    font-weight: 700;
+    width: 90px;
+    border-right: 1px solid #c1c1c1;
+}
+#about .about-list .list-item p {
+    margin: 0;
+    padding-left: 1rem;
+}
+#about .btn {
+    margin: 0;
+}
+/* ==================== Services Section ====================== */
+#services {
+    min-height: 100vh;
+    background-color: var(--bg-color-2);
+}
+#services .animate-bar::before {
+    border-color: var(--bg-color-2);
+}
+#services .service-card .card-content {
+    width: 22rem;
+    padding: 55px 40px;
+    margin: 15px;
+    background-color: #131416;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    transition: all 0.3s ease-in;
+}
+#services .service-card .card-content:hover {
+    transform: translateY(-5%);
+    background-color: #1a1a1a;    
+}
+#services .service-card .card-content i {
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+#services .service-card .card-content h5 {
+    margin-bottom: 10px;
+}
+
+/* ==================== Resume Section ====================== */
+#resume {
+    background-color: var(--bg-color-1);
+}
+#resume .container {
+    gap: 2rem;
+}
+#resume .animate-bar::before {
+    border-color: var(--bg-color-1);
+}
+#resume .title {
+    margin-bottom: 10px;
+}
+.resune-item {
+    width: 35rem;
+    padding: 32px 40px;
+    background-color: #191a20;
+    border-left: 2px solid var(--main-color);
+    position: relative;
+    border-bottom: 1px solid #323232;
+}
+.resune-item:last-child {
+    border-bottom: none;
+}
+.resune-item .item-arrow {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 0;
+    top: 2.5rem;
+    background-color: var(--main-color);
+}
+.resune-item .item-arrow::before {
+    content: "";
+    position: absolute;
+    border: 8px solid transparent;
+    left: 16px;
+    border-left-color: var(--main-color);
+}
+#skills {
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+#skills .heading-wrapper{
+    padding-top: 100px;
+}
+#skills .container{
+  gap: 4rem;
+  margin-top: 50px;
+}
+.progress-item .prgress-bar {
+    width: 35rem;
+    height: 8px;
+    background-color: var(--bg-color-2);
+}
+.progress-item .prgress-bar .progress-line {
+    height: 100%;
+    background-color: var(--main-color);
+    position: relative;
+}
+.progress-item .prgress-bar .progress-line::after {
+    content: "90%";
+    position: absolute;
+    color: white;
+    font-size: 17px;
+    top: -30px;
+    right: -15px;
+}
+.prgress-bar .progress-line.html {
+    width: 90%;
+}
+.prgress-bar .progress-line.css {
+    width: 96%;
+}
+.prgress-bar .progress-line.js {
+    width: 75%;
+}
+.prgress-bar .progress-line.json {
+    width: 60%;
+}
+.prgress-bar .progress-line.python {
+    width: 45%;
+}
+.prgress-bar .progress-line.msql {
+    width: 80%;
+}
+
+.prgress-bar .progress-line.html::after {
+    content: "90%";
+}
+.prgress-bar .progress-line.css::after {
+    content: "96%";
+}
+.prgress-bar .progress-line.js::after {
+    content: "75%";
+}
+.prgress-bar .progress-line.json::after {
+    content: "60%";
+}
+.prgress-bar .progress-line.python::after {
+    content: "45%";
+}
+.prgress-bar .progress-line.msql::after {
+    content: "80%";
+}
+
+/* ==================== Portfolio Section ====================== */
+#portfolio {
+    min-height: 100vh;
+    background-color: var(--bg-color-2);
+}
+#portfolio .animate-bar::before {
+    border-color: var(--bg-color-2);
+}
+.gallary-section {
+    max-width: 1770px;
+    margin: auto;
+}
+.gallary-section .gallary-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallary-section .gallary-nav .gallary-filter {
+    padding: 0 15px;
+    margin: 40px 0;
+    text-align: center;
+    width: 100%;
+}
+.gallary-nav .gallary-filter .filter-item {
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 8px 20px 8px 20px;
+    line-height: 1.2;
+    position: relative;
 }
