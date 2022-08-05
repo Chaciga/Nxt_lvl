@@ -486,3 +486,19 @@ p,span {
     line-height: 1.2;
     position: relative;
 }
+.gallary-nav .gallary-filter .filter-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 50%;
+    bottom: -5px;
+    height: 2px;
+    display: block;
+    background-color: var(--main-color);
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+.gallary-nav .gallary-filter .filter-item.filter-item.active::after {
+    width: 100%;
+    left: 0;
+}
