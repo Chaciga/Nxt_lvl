@@ -307,7 +307,11 @@ footer {
     min-height: 3vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.footnote {
+    align-items: flex-start;
 }
 
 /* ==================== Responsive Section ====================== */
@@ -316,7 +320,6 @@ footer {
 /* Media Queries */
 @media (max-width: 950px) {
     #navbar .logo {
-        margin-left: -6rem;
         margin-top: 0.5rem;
         width: 46px;
     }
@@ -371,7 +374,6 @@ footer {
 
 @media (max-width: 850px) {
     #navbar .logo {
-        margin-left: -6rem;
         margin-top: 0.5rem;
         width: 46px;
     }
@@ -389,6 +391,7 @@ footer {
 
     #blogs .container .blog-text {
         margin-top: 20px;
+        width: 35rem;
     }
 
     #blogs .container .blog-text h2,
@@ -399,15 +402,27 @@ footer {
     .container {
         padding: 0 80px;
     }
+    #footer p {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 700px) {
-    #portfolio .gallery-item {
-        padding: 15px 1.5rem;
+    #navbar .logo {
+        margin-left: 2.5rem;
+        margin-top: 1rem;
+        width: 55px;
     }
-
     #blogs .container .blog-text {
         margin-top: -80px;
+        width: 35rem;
+    }
+    #footer p {
+        font-size: 18px;
+        width: 20px;
+    }
+    #blogs .heading-wrapper .heading h2 {
+        font-size: 32px;
         width: 35rem;
     }
 }
@@ -494,5 +509,8 @@ footer {
     #blogs .container .blog-text h2,
     h4 {
         font-size: 28px;
+    }
+    .footnote p {
+        font-size: 18;
     }
 }
