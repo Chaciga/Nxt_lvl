@@ -354,6 +354,7 @@ p,span {
     background-color: var(--bg-color-1);
 }
 #resume .container {
+    margin-top: 40px;
     gap: 2rem;
 }
 #resume .animate-bar::before {
@@ -615,6 +616,9 @@ p,span {
     min-height: 100vh;
     background-color: var(--bg-color-2);
 }
+#blogs .container {
+    margin-top: 30px;
+}
 #blogs .animate-bar::before {
     border-color: var(--bg-color-2);
 }
@@ -646,6 +650,7 @@ p,span {
 }
 .blog p {
     margin-top: 10px;
+    text-align: justify;
 }
 .blog button{
     margin-top: 10px;
