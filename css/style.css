@@ -773,6 +773,9 @@ footer {
     justify-content: center;
     align-items: center;
 }
+footer .footnote p{
+    font-size: 18px;
+}
 
 /* ==================== Responsive Section ====================== */
 
@@ -854,6 +857,9 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     #about .container .about-img {
         width: 20rem;
     }
+    footer .footnote p{
+        font-size: 14px;
+    }
 }
 @media (max-width: 850px) {
     #navbar .checkbox {
@@ -895,10 +901,16 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     #contact form {
         width: 40rem;
     }
+    footer .footnote p{
+        font-size: 14px;
+    }
 }
 @media (max-width: 700px) {
     #portfolio .gallery-item {
         padding: 15px 1.5rem;
+    }
+    footer .footnote p{
+        font-size: 14px;
     }
 }
 @media (max-width: 600px) {
@@ -945,6 +957,9 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     .owl-carousel .owl-dot {
         padding: 0 !important;
     }
+    footer .footnote p{
+        font-size: 14px;
+    }
 }
 @media (max-width: 467px) {
     #portfolio .gallery-item{
@@ -952,5 +967,8 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     }
     #portfolio .gallary-filter .filter-item {
         margin-top: 10px;
+    }
+    footer .footnote p{
+        font-size: 14px;
     }
 }

@@ -370,6 +370,9 @@ footer {
     h4 {
         font-size: 28px;
     }
+    footer .footnote p{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -402,8 +405,8 @@ footer {
     .container {
         padding: 0 80px;
     }
-    #footer p {
-        font-size: 28px;
+    footer .footnote p{
+        font-size: 14px;
     }
 }
 
@@ -424,6 +427,9 @@ footer {
     #blogs .heading-wrapper .heading h2 {
         font-size: 32px;
         width: 35rem;
+    }
+    footer .footnote p{
+        font-size: 14px;
     }
 }
 
@@ -476,6 +482,9 @@ footer {
     .owl-carousel .owl-dot {
         padding: 0 !important;
     }
+    footer .footnote p{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 467px) {
@@ -510,7 +519,7 @@ footer {
     h4 {
         font-size: 28px;
     }
-    .footnote p {
-        font-size: 18;
+    footer .footnote p{
+        font-size: 14px;
     }
 }
