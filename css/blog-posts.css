@@ -179,8 +179,6 @@ span {
     color: #965f68;
 }
 
-
-
 /* ==================== Blog Section ====================== */
 #blogs {
     min-height: 100vh;
@@ -297,6 +295,12 @@ li {
 
 .blog-3::before {
     content: "12th Feb";
+}
+.signoff {
+    width: 5rem;
+}
+.signoff img {
+    width: 100%;
 }
 
 
@@ -487,12 +491,57 @@ footer {
     }
 }
 
+@media (max-width: 520px) {
+    #navbar .logo {
+        margin-left: 2rem;
+        margin-top: 1rem;
+        width: 46px;
+    }
+
+    #blogs .heading-wrapper  {
+        padding-left: 30px;
+    }  
+    
+    #blogs .heading-wrapper .heading {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #blogs .heading-wrapper .heading h2 {
+        font-size: 26px;
+        width: 25rem;
+    }
+
+    #blogs .container .head-img {
+        margin-top: 15px;
+        margin-bottom: -210px;
+        width: 25rem;
+    }
+
+    #blogs .container .blog-text {
+        margin-top: -80px;
+        width: 25rem;
+    }
+
+    #blogs .container .blog-text h2,
+    h4 {
+        font-size: 28px;
+    }
+    footer .footnote p{
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 467px) {
     #navbar .logo {
         margin-left: 2rem;
         margin-top: 1rem;
         width: 46px;
     }
+
+    #blogs .heading-wrapper  {
+        padding-left: 30px;
+    }  
 
     #blogs .heading-wrapper .heading {
         justify-content: center;
@@ -521,5 +570,45 @@ footer {
     }
     footer .footnote p{
         font-size: 14px;
+    }
+}
+
+@media (max-width: 440px) {
+    #navbar .logo {
+        margin-left: 0.7rem;
+        margin-top: 1rem;
+        width: 40px;
+    }
+    #blogs .heading-wrapper  {
+        padding-left: 30px;
+    }   
+    #blogs .heading-wrapper .heading {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #blogs .heading-wrapper .heading h2 {
+        font-size: 24px;
+        width: 14em;
+        margin-left: 1px;
+    }
+
+    #blogs .container .head-img {
+        margin-top: 15px;
+        margin-bottom: -240px;
+        width: 25rem;
+    }
+
+    #blogs .container .blog-text {
+        margin-top: -80px;
+        width: 25rem;
+    }
+
+    #blogs .container .blog-text h2,
+    h4 {
+        font-size: 24px;
+    }
+    footer .footnote p{
+        font-size: 10px;
     }
 }

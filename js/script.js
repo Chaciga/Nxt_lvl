@@ -31,7 +31,6 @@ filterContainer.addEventListener("click", (event) => {
     }
 });
 
-
 // Review Carosel
 
 $('.owl-carousel').owlCarousel({

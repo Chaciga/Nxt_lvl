@@ -1,0 +1,280 @@
+/* ==================== Google Fonts ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+/* ==================== CSS Reset ====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    line-height: 1.7;
+    background-color: black;
+    min-height: 100vh;
+}
+
+::selection {
+    color: white;
+    background-color: #965f68;
+}
+
+/* ==================== CSS Variables ====================== */
+:root {
+    --font-large-color: white;
+    --font-small-color: #9f9f9f;
+    --main-color: #965f68;
+    --bg-color-1: #131416;
+    --bg-color-2: #191a20;
+}
+
+h1 {
+    font-size: 90px;
+    color: var(--font-large-color);
+}
+
+h2 {
+    font-size: 46px;
+    color: var(--font-large-color);
+}
+
+h3 {
+    font-size: 34px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+p,
+span {
+    font-weight: 700px;
+    font-size: 17px;
+    color: var(--font-small-color);
+}
+
+/* ==================== Reusable Classes ====================== */
+.container {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: transparent;
+    font-size: 17px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.animate-bar {
+    width: 5rem;
+    height: 4px;
+    background-color: var(--main-color);
+    margin-top: 15px;
+    position: relative;
+}
+
+.sub-heading {
+    max-width: 40rem;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 1rem;
+}
+
+/* ==================== Home Section ====================== */
+#home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#home .text-holder {
+    z-index: 2;
+    right: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+#home .text-holder h1 {
+    font-weight: 300;
+}
+#home .text-holder h1 span {
+    font-size: 90px;
+    color: var(--main-color);
+}
+#home .text-holder h3 {
+    font-weight: 300;
+}
+#home .text-holder h3 span {
+    font-size: 34px;
+    color: var(--main-color);
+}
+#home .text-holder .button {
+    display: block;
+    text-align: center;
+}
+#home .hero-img {
+    width: 30rem;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    right: 2rem;
+    bottom: -8px;
+    pointer-events: none;
+    opacity: 0.6;
+}
+#home .hero-img img {
+    width: 100%;
+}
+#home .social-icons {
+    position: absolute;
+    bottom: 2rem;
+    z-index: 2;
+    right: 33.3rem;
+}
+#home .social-icons p {
+    text-align: center;
+    text-size-adjust: 10px;
+}
+/* ==================== Responsive Section ====================== */
+
+
+/* Media Queries */
+@media (max-width: 950px) {
+    #home .text-holder h1,
+    #home .text-holder h1 span{
+        font-size: 45px;
+        text-align: center;
+    }
+    #home .text-holder h3,
+    #home .text-holder h3 span{
+        font-size: 20px;
+    }
+    #home .social-icons {
+        width: 100%;
+        text-align: center;
+        right: 0;
+    }
+    #home .social-icons p {
+        font-size: ;
+    }
+}
+
+@media (max-width: 850px) {
+    
+}
+
+@media (max-width: 700px) {
+    #home .text-holder h1,
+    #home .text-holder h1 span{
+        font-size: 35px;
+        text-align: center;
+    }
+    #home .text-holder h3,
+    #home .text-holder h3 span{
+        font-size: 15px;
+    }
+    .btn {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 20px;
+    }
+    #home .text-holder h1,
+    #home .text-holder h1 span{
+        font-size: 35px;
+        text-align: center;
+    }
+    #home .text-holder h3,
+    #home .text-holder h3 span{
+        font-size: 15px;
+    }
+    .btn {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 520px) {
+    #home .text-holder h1,
+    #home .text-holder h1 span{
+        font-size: 25px;
+        text-align: center;
+    }
+    #home .text-holder h3,
+    #home .text-holder h3 span{
+        font-size: 10px;
+        text-align: center;
+    }
+    .btn {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 467px) {
+    #home .text-holder h1,
+    #home .text-holder h1 span{
+        font-size: 25px;
+        text-align: center;
+    }
+    #home .text-holder h3,
+    #home .text-holder h3 span{
+        font-size: 10px;
+        text-align: center;
+    }
+    .btn {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 440px) {
+    #home .text-holder h1,
+    #home .text-holder h1 span{
+        font-size: 25px;
+        text-align: center;
+    }
+    #home .text-holder h3,
+    #home .text-holder h3 span{
+        font-size: 10px;
+        text-align: center;
+    }
+    #home .social-icons p {
+        font-size: 12;
+    }
+    .btn {
+        font-size: 10px;
+    }
+}

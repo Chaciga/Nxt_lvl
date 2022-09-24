@@ -1,0 +1,158 @@
+/* ==================== Google Fonts ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+/* ==================== CSS Reset ====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    line-height: 1.7;
+    background-color: black;
+    min-height: 100vh;
+}
+
+::selection {
+    color: white;
+    background-color: #965f68;
+}
+
+/* ==================== CSS Variables ====================== */
+:root {
+    --font-large-color: white;
+    --font-small-color: #9f9f9f;
+    --main-color: #965f68;
+    --bg-color-1: #131416;
+    --bg-color-2: #191a20;
+}
+
+h1 {
+    font-size: 32px;
+    color: var(--main-color);
+}
+p {
+    font-weight: 700px;
+    font-size: 17px;
+    color: var(--font-small-color);
+    font-size: 15px;
+    margin: 20px 0 20px 0;
+}
+span {
+    font-weight: 700px;
+    color: var(--main-color);
+}
+
+/* ==================== Reusable Classes ====================== */
+#sent {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#sent .container {
+    background-color: #131416;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 700px;
+    text-align: center;
+}
+.btn {
+    background-color: transparent;
+    font-size: 12px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+/* ==================== Responsive Section ====================== */
+
+
+/* Media Queries */
+@media (max-width: 950px) {
+
+}
+
+@media (max-width: 850px) {
+    
+}
+
+@media (max-width: 700px) {
+    #sent .container {
+        background-color: #131416;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        width: 500px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    
+}
+
+@media (max-width: 520px) {
+    #sent .container {
+        background-color: #131416;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        width: 400px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 467px) {
+    #sent .container {
+        background-color: #131416;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        width: 350px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 440px) {
+    #sent .container {
+        background-color: #131416;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        width: 350px;
+        text-align: center;
+    }
+}
